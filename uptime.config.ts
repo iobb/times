@@ -54,16 +54,16 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: 's11.serv00.com:22',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://google.com',
+      statusPageLink: 'https://s11.serv00.com',
       timeout: 5000,
     },
   ],
   notification: {
     // [Optional] apprise API server URL
     // if not specified, no notification will be sent
-    appriseApiServer: "https://qq.com",
+    appriseApiServer: "https://apprise.example.com/notify",
     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     // if not specified, no notification will be sent
     recipientUrl: "tgram://bottoken/ChatID",
