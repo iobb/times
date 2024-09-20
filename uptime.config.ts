@@ -23,11 +23,11 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: '我的URL监视器',
       // `method` should be a valid HTTP Method
-      method: 'URL',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://google.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: '这是此监视器的工具提示',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://google.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -49,13 +49,13 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
+      id: 'serv00.vps',
       name: 'TCP监视器示例',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 's11.serv00.com:22',
-      tooltip: 'My production server SSH',
+      tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
     },
