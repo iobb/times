@@ -1,10 +1,10 @@
 const pageConfig = {
   // Title for your status page
-  title: "状态监视 Page",
+  title: "状态页面 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'blog.', label: 'Blog' },
-    { link: 'https://github.com/lyc8503', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/lyc8503', label: 'Github', highlight: true },
   ],
 }
 
@@ -18,13 +18,13 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'google',
+      id: 'googlezh',
       // `name` is used at status page and callback message
       name: '我的URL监视器',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://www.google.com',
+      target: 'https://www.qq.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: '这是此监视器的工具提示',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
