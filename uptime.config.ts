@@ -3,7 +3,7 @@ const pageConfig = {
   title: "状态页面 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'blog.', label: 'Blog' },
+    { link: 'https://blog.cn', label: 'Blog' },
     { link: 'https://github.com/lyc8503', label: 'Github', highlight: true },
   ],
 }
