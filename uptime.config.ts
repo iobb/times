@@ -18,9 +18,9 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'googlezh',
+      id: 'Bing.com',
       // `name` is used at status page and callback message
-      name: 'URL监视器',
+      name: 'Bing-GET-URL',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -30,26 +30,12 @@ const workerConfig = {
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://bing.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 5000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'success',
-      // [OPTIONAL] if specified, the check will run in your specified region,
-      // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://google.com',
     },
     // Example TCP Monitor
     {
       id: 'serv00vps',
-      name: 'S11.pl.TCP22监视器',
+      name: 'S11.pl.TCP_22监视器',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
@@ -60,23 +46,21 @@ const workerConfig = {
     },
       {
       id: 'ge',
-      name: 'google',
+      name: 'Google',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://www.google.com',
-      tooltip: '我服务器SSH',
+      tooltip: '谷歌GET',
       timeout: 5000,
     },
      {
       id: 'cf',
-      name: 'cloudflare',
+      name: 'Cloudflare',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://www.cloudflare.com',
-      tooltip: '我服务器SSH',
-      statusPageLink: 'https://panel1.serv00.com',
       timeout: 5000,
     },
   ],
