@@ -1,11 +1,11 @@
 const pageConfig = {
   // Title for your status page
-  title: "lyc8503's sssssStatus Page",
+  title: "状态监视 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.', label: 'GitHub' },
+    { link: 'https://blog./', label: 'Blog' },
+    { link: 'https://github.com/lyc8503', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -21,9 +21,9 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: '我的URL监视器',
       // `method` should be a valid HTTP Method
-      method: 'TCP_PING',
+      method: 'PING',
       // `target` is a valid URL
       target: 'https://google.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -50,13 +50,13 @@ const workerConfig = {
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      name: 'TCP监视器示例',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 's11.serv00.com:22',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://s11.serv00.com',
+      statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
     },
   ],
