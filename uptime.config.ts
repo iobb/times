@@ -62,7 +62,7 @@ const workerConfig = {
       id: 'google',
       name: 'My Google Monitor',
       method: 'GET',
-      target: 'https://www.google.com'
+      target: 'https://www.google.com',
       timeout: 5000,
     },
      {
