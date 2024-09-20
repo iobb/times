@@ -20,11 +20,11 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'googlezh',
       // `name` is used at status page and callback message
-      name: '我的URL监视器',
+      name: 'URL监视器',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://bcn.us.kg',
+      target: 'https://bing.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: '这是此监视器的工具提示',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -65,12 +65,12 @@ const workerConfig = {
       target: 'https://www.google.com'
     },
      {
-      id: 'sgoogles',
+      id: 'cf',
       name: 'google监视器',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://www.google.com',
+      target: 'https://www.cloudflare.com',
       tooltip: '我服务器SSH',
       statusPageLink: 'https://panel1.serv00.com',
       timeout: 5000,
