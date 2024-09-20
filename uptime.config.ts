@@ -64,6 +64,17 @@ const workerConfig = {
       method: 'GET',
       target: 'https://www.google.com'
     },
+     {
+      id: 'serv00.vps',
+      name: '监视器',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://www.google.com',
+      tooltip: '我服务器SSH',
+      statusPageLink: 'https://panel1.serv00.com',
+      timeout: 5000,
+    },
   ],
   notification: {
     // [Optional] apprise API server URL
