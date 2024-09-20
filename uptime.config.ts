@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: '我的URL监视器',
       // `method` should be a valid HTTP Method
-      method: 'PING',
+      method: 'URL',
       // `target` is a valid URL
       target: 'https://google.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
