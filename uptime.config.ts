@@ -17,6 +17,16 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
+      id: 'boge',
+      name: 'boge.us.kg',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://boge.us.kg',
+      tooltip: '伯格blog',
+      timeout: 5000,
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Bing.com',
       // `name` is used at status page and callback message
@@ -42,16 +52,6 @@ const workerConfig = {
       target: 's11.serv00.com:22',
       tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://panel11.serv00.com',
-      timeout: 5000,
-    },
-      {
-      id: 'ge',
-      name: 'Google',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://www.google.com',
-      tooltip: '谷歌GET',
       timeout: 5000,
     },
      {
