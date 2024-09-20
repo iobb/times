@@ -58,11 +58,14 @@ const workerConfig = {
       statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
     },
-     {
-      id: 'google',
-      name: 'My Google Monitor',
+      {
+      id: 'ge',
+      name: 'google',
+      // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
+      // `target` should be `host:port` for tcp monitors
       target: 'https://www.google.com',
+      tooltip: '我服务器SSH',
       timeout: 5000,
     },
      {
