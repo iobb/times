@@ -81,9 +81,9 @@ export default function Home({
           <a href="https://www.cloudflare.com/" target="_blank">
             Cloudflare
           </a>
-          and ❤ by{' '}
+          , made with ❤ by{' '}
           <a href="https://github.com/lyc8503" target="_blank">
-            Lyc8503'
+            lyc8503
           </a>
           .
         </Text>
