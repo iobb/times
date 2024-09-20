@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'My API Monitor',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'TCP_PING',
       // `target` is a valid URL
       target: 'https://google.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
