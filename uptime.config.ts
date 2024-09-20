@@ -22,9 +22,9 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: '我的URL监视器',
       // `method` should be a valid HTTP Method
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` is a valid URL
-      target: 'https://www.qq.com',
+      target: 'https://bcn.us.kg',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: '这是此监视器的工具提示',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -48,7 +48,7 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'serv00.vps',
+      id: 'serv00vps',
       name: 'S11.pl.TCP22监视器',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
@@ -65,8 +65,8 @@ const workerConfig = {
       target: 'https://www.google.com'
     },
      {
-      id: 'serv00.vps',
-      name: '监视器',
+      id: 'sgoogles',
+      name: 'google监视器',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
