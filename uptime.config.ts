@@ -22,7 +22,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: '我的URL监视器',
       // `method` should be a valid HTTP Method
-      method: 'GET',
+      method: 'TCP_PING',
       // `target` is a valid URL
       target: 'https://www.qq.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -49,7 +49,7 @@ const workerConfig = {
     // Example TCP Monitor
     {
       id: 'serv00.vps',
-      name: 'TCP监视器示例',
+      name: 'S11.pl.TCP22监视器',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
@@ -57,6 +57,12 @@ const workerConfig = {
       tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
+    },
+     {
+      id: 'google_monitor',
+      name: 'My Google Monitor',
+      method: 'GET',
+      target: 'https://www.google.com'
     },
   ],
   notification: {
