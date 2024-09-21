@@ -74,12 +74,11 @@ export default function Home({
           textAlign: 'center'
         }}>
           Open-page by{' '}
-          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
             Uptime
-          </a>{' '}
+          {' '}
           and{' '}
           <a href="https://www.cloudflare.com/" target="_blank">
-            Cf
+            cloudflare
           </a>
           , and{' '}
           <a href="https://github.com/lyc8503" target="_blank">
