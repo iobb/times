@@ -3,7 +3,7 @@ const pageConfig = {
   title: "状态页面 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://blog.cn', label: 'Blog' },
+    { link: 'https://blog.cn', label: 'Blog' , highlight: true},
     { link: 'https://github.com/lyc8503', label: 'Github', highlight: true },
   ],
 }
@@ -18,7 +18,7 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       id: 'boge',
-      name: 'boge.us.kg',
+      name: 'Boge.us.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -27,10 +27,19 @@ const workerConfig = {
       timeout: 5000,
     },
     {
+      id: 'uul',
+      name: 'INFO-NAV',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'http://uul.us.kg',
+      timeout: 5000,
+    },
+    {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Bing.com',
       // `name` is used at status page and callback message
-      name: 'Bing-GET-URL',
+      name: 'Bing.com-GET',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -45,7 +54,7 @@ const workerConfig = {
     // Example TCP Monitor
     {
       id: 'serv00vps',
-      name: 'S11.pl.TCP_22监视器',
+      name: 'S11.pl.TCP_22',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
@@ -56,7 +65,7 @@ const workerConfig = {
     },
      {
       id: 'cf',
-      name: 'Cloudflare',
+      name: 'CloudFlare',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
