@@ -29,11 +29,11 @@ export default function OverallStatus({
   let statusString = ''
   let icon = <IconAlertCircle style={{ width: 64, height: 64, color: '#b91c1c' }} />
   if (state.overallUp === 0 && state.overallDown === 0) {
-    statusString = 'No data yet'
+    statusString = '没有数据 ！'
   } else if (state.overallUp === 0) {
-    statusString = 'All systems not operational'
+    statusString = '➽ 有的系统没有运行！'
   } else if (state.overallDown === 0) {
-    statusString = 'All systems operational'
+    statusString = '✔ 所有系统都在运行'
     icon = <IconCircleCheck style={{ width: 64, height: 64, color: '#059669' }} />
   } else {
     statusString = `Some systems not operational (${state.overallDown} out of ${state.overallUp + state.overallDown})`
