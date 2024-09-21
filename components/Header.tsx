@@ -21,20 +21,18 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="*" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
             <Text
-              size="x2"
+              size="x1"
               span
-              fw={700}
+              fw={900}
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
               系统在线ing
             </Text>
-          </a>
         </div>
 
         <Group gap={5} visibleFrom="sm">
