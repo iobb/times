@@ -21,8 +21,6 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-
-          
             <Text size="xl" span>
               🕒
             </Text>
