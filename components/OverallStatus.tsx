@@ -31,12 +31,12 @@ export default function OverallStatus({
   if (state.overallUp === 0 && state.overallDown === 0) {
     statusString = '没有数据 ！'
   } else if (state.overallUp === 0) {
-    statusString = '➽ 有的系统没有运行！'
+    statusString = 'X 所有系统均无法运行！'
   } else if (state.overallDown === 0) {
-    statusString = '✔ 所有系统都在运行'
+    statusString = '✔  所有系统都在运行 。'
     icon = <IconCircleCheck style={{ width: 64, height: 64, color: '#059669' }} />
   } else {
-    statusString = `Some systems not operational (${state.overallDown} out of ${state.overallUp + state.overallDown})`
+    statusString = `某些系统无法运行 (${state.overallDown} out of ${state.overallUp + state.overallDown})`
   }
 
   const [openTime] = useState(Math.round(Date.now() / 1000))
@@ -65,8 +65,8 @@ export default function OverallStatus({
         {statusString}
       </Title>
       <Title mt="sm" style={{ textAlign: 'center', color: '#70778c' }} order={5}>
-        Last updated on:{' '}
-        {`${new Date(state.lastUpdate * 1000).toLocaleString()} (${currentTime - state.lastUpdate} sec ago)`}
+        最后更新于:{' '}
+        {`${new Date(state.lastUpdate * 1000).toLocaleString()} (${currentTime - state.lastUpdate} 秒前)`}
       </Title>
     </>
   )
