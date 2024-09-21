@@ -16,9 +16,19 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
+     {
+      id: 'xiong',
+      name: 'Bear ʕ•ᴥ•ʔ',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://pay.bearblog.dev/',
+      tooltip: 'Bearblog',
+      timeout: 5000,
+    },
     {
       id: 'boge',
-      name: 'Boge.us.kg',
+      name: 'Boge.xlog',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -32,7 +42,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'http://uul.us.kg',
+      target: 'http://uul.us.kg',      
       timeout: 5000,
     },
     {
@@ -70,6 +80,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://www.cloudflare.com',
+      tooltip: 'CloudFlare',
       timeout: 5000,
     },
   ],
