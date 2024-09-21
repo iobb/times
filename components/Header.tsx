@@ -21,17 +21,17 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-            <Text size="x2" span>
+            <Text size="x1" span>
               🕒
             </Text>
             <Text
-              size="x6"
+              size="x1"
               span
-              fw={900}
+              fw={700}
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              -系统在线Ing
+               - 系统在线 - Ing
             </Text>
         </div>
 
