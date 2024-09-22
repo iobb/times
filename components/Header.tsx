@@ -21,6 +21,7 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
+          <a href="Uptime" target="_blank">
             <Text size="x1" span>
               🕒
             </Text>
@@ -33,6 +34,7 @@ export default function Header() {
             >
                - 系统在线 - Ing
             </Text>
+          </a>
         </div>
 
         <Group gap={5} visibleFrom="sm">
