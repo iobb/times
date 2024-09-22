@@ -24,6 +24,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'https://pay.bearblog.dev/',
       tooltip: 'Bearblog',
+      checkLocationWorkerRoute: 'https://ip.bcn.us.kg/'
       timeout: 5000,
     },
      {
