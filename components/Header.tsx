@@ -32,9 +32,8 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              系统在线 - Ing UptimeFlare
+              -系统在线 - Ing
             </Text>
-          </a>
         </div>
 
         <Group gap={5} visibleFrom="sm">
