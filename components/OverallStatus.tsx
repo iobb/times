@@ -33,7 +33,7 @@ export default function OverallStatus({
   } else if (state.overallUp === 0) {
     statusString = 'X 所有系统均无法运行！'
   } else if (state.overallDown === 0) {
-    statusString = '✔  所有系统都在运行 。'
+    statusString = '✔  所有系统都在运行.'
     icon = <IconCircleCheck style={{ width: 64, height: 64, color: '#059669' }} />
   } else {
     statusString = `某些系统无法运行 (${state.overallDown} out of ${state.overallUp + state.overallDown})`
