@@ -1,9 +1,9 @@
 const pageConfig = {
   // Title for your status page
-  title: "状态页面 Page",
+  title: "在线状态页面 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://bing.cn', label: 'Bing' , highlight: true},
+    { link: 'https://cn.bing.com', label: 'Bing' , highlight: true},
     { link: 'https://github.com/lyc8503', label: 'Github', highlight: true },
   ],
 }
@@ -12,7 +12,7 @@ const workerConfig = {
   // Write KV at most every 3 minutes unless the status changed
   kvWriteCooldownMinutes: 3,
   // Enable HTTP Basic auth for status page & API by uncommenting the line below, format `<USERNAME>:<PASSWORD>`
-  passwordProtection: 'admin:admin',
+  // passwordProtection: 'admin:admin',
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
@@ -38,7 +38,7 @@ const workerConfig = {
     },
     {
       id: 'boge',
-      name: 'Boge.xlog',
+      name: 'Boge.Xlog',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -59,7 +59,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Bing.com',
       // `name` is used at status page and callback message
-      name: 'Bing.com-GET',
+      name: 'Bing-GET',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
