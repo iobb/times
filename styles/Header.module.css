@@ -30,5 +30,18 @@
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
   }
+body {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
 
+body.dark-mode {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 }
