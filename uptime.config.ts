@@ -1,6 +1,6 @@
 const pageConfig = {
   // Title for your status page
-  title: "在线状态页面 Page",
+  title: "在线状态页面-Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://cn.bing.com', label: '必应' , highlight: true},
@@ -16,8 +16,8 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
      {
-      id: 'xiong',
-      name: 'Bear ʕ•ᴥ•ʔ',
+      id: 'bear',
+      name: 'Bearlog ʕ•ᴥ•ʔ',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
