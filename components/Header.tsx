@@ -7,8 +7,7 @@ const toggleDarkMode = () => {
   body.classList.toggle('dark-mode');
 }
 
-const darkModeToggleBtn = document.querySelector('#dark-mode-toggle');
-darkModeToggleBtn.addEventListener('click', toggleDarkMode);}
+
 
 export default function Header() {
   const linkToElement = (link: { label: string; link: string; highlight?: boolean }) => {
