@@ -1,7 +1,7 @@
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
-
+{uni.setStorageSync(“skycolor”,this.day = (this.day == 'light') ? 'dark' : 'light' )}
 export default function Header() {
   const linkToElement = (link: { label: string; link: string; highlight?: boolean }) => {
     return (
