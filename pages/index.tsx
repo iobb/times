@@ -55,6 +55,14 @@ export default function Home({
       <main className={inter.className}>
         <Header />
 
+const toggleDarkMode = () => {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark-mode');
+}
+
+const darkModeToggleBtn = document.querySelector('#dark-mode-toggle');
+darkModeToggleBtn.addEventListener('click', toggleDarkMode);
+
         {state === undefined ? (
           <Center>
             <Text fw={700}>
