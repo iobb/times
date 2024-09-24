@@ -33,7 +33,7 @@ export default function Header() {
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
               - 系统在线 -Ing
-            </Text><button onclick=“toggleDarkMode()”>切换主题</button>
+            </Text>
         </div>
 
         <Group gap={5} visibleFrom="sm">
