@@ -1,6 +1,15 @@
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
+
+const toggleDarkMode = () => {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark-mode');
+}
+
+const darkModeToggleBtn = document.querySelector('#dark-mode-toggle');
+darkModeToggleBtn.addEventListener('click', toggleDarkMode);
+
 export default function Header() {
   const linkToElement = (link: { label: string; link: string; highlight?: boolean }) => {
     return (
