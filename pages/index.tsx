@@ -90,15 +90,6 @@ export default function Home({
     </>
   )
 }
-
-const toggleDarkMode = () => {
-  const body = document.querySelector('body');
-  body.classList.toggle('dark-mode');
-}
-
-const darkModeToggleBtn = document.querySelector('#dark-mode-toggle');
-darkModeToggleBtn.addEventListener('click', toggleDarkMode);
-
 export async function getServerSideProps() {
   const { UPTIMEFLARE_STATE } = process.env as unknown as {
     UPTIMEFLARE_STATE: KVNamespace
