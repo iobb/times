@@ -23,7 +23,7 @@ export default function Header() {
         <div>
         
             <Text size="xl" span>
-              🕒 ♞
+              🕒 ♞.
             </Text>
             <Text
               size="xl"
@@ -33,7 +33,7 @@ export default function Header() {
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
               - 系统在线 -Ing
-            </Text>
+            </Text><button onclick=“toggleDarkMode()”>切换主题</button>
         </div>
 
         <Group gap={5} visibleFrom="sm">
