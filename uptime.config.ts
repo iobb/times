@@ -3,11 +3,15 @@ const pageConfig = {
   title: "在线状态页面 Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://cn.bing.com', label: 'Bing' , highlight: true},
+    { link: 'https://cn.bing.com', label: '必应' , highlight: true},
     { link: 'https://github.com/lyc8503', label: 'Github', highlight: true },
   ],
 }
-
+function toggleDarkMode() {
+  const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
+  document.body.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
+  localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
+}
 const workerConfig = {
   // Write KV at most every 3 minutes unless the status changed
   kvWriteCooldownMinutes: 3,
