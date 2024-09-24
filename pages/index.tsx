@@ -37,6 +37,9 @@ export default function Home({
         </Text>
       )
     }
+
+uni.setStorageSync(“skycolor”,this.day = (this.day == 'light') ? 'dark' : 'light' )
+
     return (
       <div style={{ maxWidth: '810px' }}>
         <MonitorDetail monitor={monitor} state={state} />
