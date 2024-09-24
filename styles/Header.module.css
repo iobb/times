@@ -30,4 +30,15 @@
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
   }
+  /* 默认的明亮主题样式 */
+body {
+  background: white;
+  color: black;
+}
+ 
+/* 黑暗主题样式 */
+body[data-theme='dark'] {
+  background: black;
+  color: white;
+}
 }
