@@ -27,11 +27,6 @@ export default function Home({
     state = JSON.parse(stateStr) as MonitorState
   }
 //888
-function toggleDarkMode() {
-  const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
-  document.body.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
-  localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
-}
   // Specify monitorId in URL hash to view a specific monitor (can be used in iframe)
   const monitorId = window.location.hash.substring(1);
   if (monitorId) {
