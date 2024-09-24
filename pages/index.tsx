@@ -36,6 +36,7 @@ export default function Home({
           Monitor with id {monitorId} not found!
         </Text>
       )
+uni.setStorageSync(“skycolor”,this.day = (this.day == 'light') ? 'dark' : 'light' )
     }
 
     return (
