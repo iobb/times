@@ -9,6 +9,24 @@ import Header from '@/components/Header'
 import MonitorList from '@/components/MonitorList'
 import { Center, Divider, Text } from '@mantine/core'
 import MonitorDetail from '@/components/MonitorDetail'
+
+export const runtime = 'experimental-edge'
+const inter = Inter({ subsets: ['latin'] })
+
+export default function Home({
+  state: stateStr,
+  monitors,
+}: {
+  state: string
+  monitors: MonitorTarget[]
+  tooltip?: string
+  statusPageLink?: string
+}) {
+  let state;
+  if (stateStr !== undefined) {
+    state = JSON.parse(stateStr) as MonitorState
+  }
+
   // Specify monitorId in URL hash to view a specific monitor (can be used in iframe)
   const monitorId = window.location.hash.substring(1);
   if (monitorId) {
