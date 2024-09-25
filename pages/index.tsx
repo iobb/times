@@ -26,6 +26,34 @@ export default function Home({
   if (stateStr !== undefined) {
     state = JSON.parse(stateStr) as MonitorState
   }
+
+const toggleButton = document.querySelector("#dark-mode-toggle")
+  let darkMode = localStorage.getItem("theme")
+
+  if (darkMode === "dark") enableDarkMode()
+
+  toggleButton.addEventListener("click", e => {
+    darkMode = localStorage.getItem("theme")
+    if (darkMode === "dark") {
+      disableDarkMode()
+    } else {
+      enableDarkMode()
+    }
+  })
+
+  function enableDarkMode() {
+    document.body.classList.add("dark-mode")
+    localStorage.setItem("theme", "dark")
+  }
+
+  function disableDarkMode() {
+    document.body.classList.remove("dark-mode")
+    localStorage.setItem("theme", "light")
+  }
+  window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addListener(e => (e.matches ? enableDarkMode() : disableDarkMode()))
+
   // Specify monitorId in URL hash to view a specific monitor (can be used in iframe)
   const monitorId = window.location.hash.substring(1);
   if (monitorId) {
