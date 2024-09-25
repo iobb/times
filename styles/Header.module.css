@@ -1,7 +1,7 @@
 .header {
   height: rem(56px);
   margin-bottom: rem(12px);
-  background-color: var(--mantine-color-gray-7);
+  background-color: var(--mantine-color-boby);
   border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
 
@@ -23,25 +23,11 @@
   font-weight: 500;
 
   @mixin hover {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    background-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-6));
   }
 
   [data-mantine-color-scheme] &[data-active] {
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
   }
-body {
-  --background-color: #ffffff;
-  --text-color: #000000;
-}
-
-body.dark-mode {
-  --background-color: #000000;
-  --text-color: #ffffff;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
 }
