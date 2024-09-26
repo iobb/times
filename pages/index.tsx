@@ -76,9 +76,8 @@ export default function Home({
         }}>
           Open-page by
             Uptime
-          and{' '}
             cloudflare
-          , and{' '}
+          and
             lyc8503
           .
         </Text>
