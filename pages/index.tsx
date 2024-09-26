@@ -74,10 +74,9 @@ export default function Home({
         <Text size="xs" mt="xs" mb="xs" style={{
           textAlign: 'center'
         }}>
-          Open-page by
-            Uptime
-            cloudflare
-          and
+         by
+            UptimeFlare-
+            cloudflare-
             lyc8503
           .
         </Text>
