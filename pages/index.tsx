@@ -78,7 +78,6 @@ export default function Home({
             Uptime
           and{' '}
             cloudflare
-          </a>
           , and{' '}
             lyc8503
           .
