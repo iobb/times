@@ -23,7 +23,7 @@ export default function Header() {
         <div>
         
             <Text size="xl" span>
-              🕒 ♞.
+              🕒 .
             </Text>
             <Text
               size="xl"
@@ -32,7 +32,7 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              - 系统在线 -Ing
+              系统在线-Ing
             </Text>
         </div>
 
