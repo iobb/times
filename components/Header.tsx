@@ -23,7 +23,7 @@ export default function Header() {
         <div>
         
             <Text size="xl" span>
-              🕒 🚰
+              🕒  
             </Text>
             <Text
               size="xl"
