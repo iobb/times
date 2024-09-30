@@ -38,11 +38,11 @@ const workerConfig = {
     },
     {
       id: 'boge',
-      name: 'Boge.Xlog',
+      name: 'Boge.Notion',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://boge.us.kg',
+      target: 'https://blog.boge.us.kg',
       tooltip: '伯格blog',
       timeout: 5000,
     },
