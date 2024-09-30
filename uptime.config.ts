@@ -37,7 +37,7 @@ const workerConfig = {
       timeout: 5000,
     },
     {
-      id: 'boge',
+      id: 'bogeblog',
       name: 'Boge.Notion',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
