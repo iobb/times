@@ -35,7 +35,7 @@ const workerConfig = {
       tooltip: 'Bearblog',
       //checkLocationWorkerRoute: 'https://ip.bcn.us.kg/',
       timeout: 5000,
-    },https://cloudsh.serv00.net/info
+    },
      {
       id: 'kvu',
       name: 'TEST.KVU',
