@@ -21,7 +21,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target:' https://cloudsh.serv00.net/info/',
+      target:' https://cloudsh.serv00.net/info',
       tooltip: '00web',
       timeout: 5000,
     },
@@ -31,7 +31,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://pay.bearblog.dev/',
+      target: 'https://pay.bearblog.dev',
       tooltip: 'Bearblog',
       //checkLocationWorkerRoute: 'https://ip.bcn.us.kg/',
       timeout: 5000,
@@ -42,7 +42,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://COM.K.VU/',
+      target: 'https://COM.K.VU',
       tooltip: 'test00.html',
       timeout: 5000,
     },
