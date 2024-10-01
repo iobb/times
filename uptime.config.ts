@@ -16,12 +16,12 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
      {
-      id: 'hy2',
+      id: 'hy',
       name: '00web',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target:' https://cloudsh.serv00.net/info',
+      target: 'https://cloudsh.serv00.net/info',
       tooltip: '00web',
       timeout: 5000,
     },
