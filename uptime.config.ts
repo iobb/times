@@ -16,6 +16,16 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
      {
+      id: 'hy2',
+      name: '00web',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target:'https://cloudsh.serv00.net/info/',
+      tooltip: '00web',
+      timeout: 5000,
+    },
+     {
       id: 'bear',
       name: 'Bearlog ʕ•ᴥ•ʔ',
       // `method` should be `TCP_PING` for tcp monitors
@@ -25,7 +35,7 @@ const workerConfig = {
       tooltip: 'Bearblog',
       //checkLocationWorkerRoute: 'https://ip.bcn.us.kg/',
       timeout: 5000,
-    },
+    },https://cloudsh.serv00.net/info
      {
       id: 'kvu',
       name: 'TEST.KVU',
