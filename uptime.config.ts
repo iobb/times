@@ -65,6 +65,18 @@ const workerConfig = {
       target: 'http://uul.us.kg',      
       timeout: 5000,
     },
+    // Example TCP Monitor
+    {
+      id: 'serv00vps',
+      name: 'Hax_vps.eu',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: '[2a01:4f8:211:2312:1234:4321:644e:0001]:2222',
+      tooltip: '我的生产服务器SSH',
+      statusPageLink: 'https://panel11.serv00.com',
+      timeout: 5000,
+    },
     {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Bing.com',
@@ -79,18 +91,6 @@ const workerConfig = {
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://bing.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      timeout: 5000,
-    },
-    // Example TCP Monitor
-    {
-      id: 'serv00vps',
-      name: 'S11.pl.TCP_22',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 's11.serv00.com:2222',
-      tooltip: '我的生产服务器SSH',
-      statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
     },
      {
