@@ -67,12 +67,12 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'serv00vps',
-      name: 'Hax_vps.eu',
+      id: 'haxvps',
+      name: 'HaX_VPS.Eu',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'hax.bcn.us.kg:22',
+      target: 'bcn.us.kg:22',
       tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
