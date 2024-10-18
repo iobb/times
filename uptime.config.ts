@@ -66,6 +66,17 @@ const workerConfig = {
       timeout: 5000,
     },
     // Example TCP Monitor
+
+Host Most
+     {
+      id: 'hostmost',
+      name: 'HostMost_JP_125M',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://boon.us.kg',      
+      timeout: 5000,
+    },
     {
       id: 'haxvps',
       name: 'HaX_VPS.Eu',
