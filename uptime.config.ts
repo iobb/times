@@ -66,8 +66,6 @@ const workerConfig = {
       timeout: 5000,
     },
     // Example TCP Monitor
-
-Host Most
      {
       id: 'hostmost',
       name: 'HostMost_JP_125M',
