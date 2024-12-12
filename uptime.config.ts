@@ -76,12 +76,12 @@ const workerConfig = {
       timeout: 5000,
     },
     {
-      id: 'haxvps',
-      name: 'HaX_VPS.Eu',
+      id: 'haxvpsus3',
+      name: 'HaX_VPS.Us3',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'bcn.us.kg:22',
+      target: 'bcn.us.kg',
       tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://panel11.serv00.com',
       timeout: 5000,
