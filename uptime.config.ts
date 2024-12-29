@@ -76,12 +76,12 @@ const workerConfig = {
       timeout: 5000,
     },
     {
-      id: 'pl_S11',
-      name: 'Pl-S11',
+      id: 'pl11',
+      name: 'Pl--S11',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '31.186.87.205:22',
+      target: '128.204.233.117:22',
       tooltip: '我的生产服务器SSH',
       statusPageLink: 'https://bcn.us.kg',
       timeout: 5000,
