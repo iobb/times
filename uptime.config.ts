@@ -81,9 +81,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'bcn.us.kg:443',
+      target: 's11.serv00.com:22',
       tooltip: '我的生产服务器SSH',
-      statusPageLink: 'https://bcn.us.kg',
+      statusPageLink: 'https://panel11.serv00.com/contact',
       timeout: 5000,
     },
     {
