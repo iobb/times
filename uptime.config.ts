@@ -82,7 +82,7 @@ const workerConfig = {
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: '15.204.129.36:26666',
-      tooltip: 'Url.nn.kg',
+      tooltip: '15.204.129.36:26666',
       statusPageLink: 'https://gv.uy',
       timeout: 5000,
     },
