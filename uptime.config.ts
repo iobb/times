@@ -16,13 +16,13 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
      {
-      id: 'hy',
-      name: '00web',
+      id: 'Haxus33',
+      name: 'Java.ae.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://cloudsh.serv00.net/info',
-      tooltip: '00web',
+      target: 'https://java.ae.kg',
+      tooltip: 'Home',
       timeout: 5000,
     },
      {
@@ -37,52 +37,52 @@ const workerConfig = {
       timeout: 5000,
     },
      {
-      id: 'kvu',
-      name: 'TEST.KVU',
+      id: 'Hxaus31',
+      name: 'Vps.let.gs',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://COM.K.VU',
-      tooltip: 'test00.html',
+      target: 'https://vps.let.gs',
+      tooltip: 'Vps',
       timeout: 5000,
     },
     {
-      id: 'bogeblog',
-      name: 'Boge.Notion',
+      id: 'vercel1',
+      name: 'Com.nn.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://blog.boge.us.kg',
+      target: 'https://com.nn.kg',
       tooltip: '伯格blog',
       timeout: 5000,
     },
     {
-      id: 'uul',
-      name: 'INFO-NAV',
+      id: 'vercel2',
+      name: 'Org.nn.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'http://uul.us.kg',      
+      target: 'http://org.nn.kg',      
       timeout: 5000,
     },
     // Example TCP Monitor
      {
-      id: 'hostmost',
-      name: 'HostMost_JP_125M',
+      id: 'vercel3',
+      name: 'Book.nn.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://boon.us.kg',      
+      target: 'https://book.nn.kg',      
       timeout: 5000,
     },
     {
-      id: 'pls11',
-      name: 'Pl--S11',
+      id: 'vercel4',
+      name: 'Url.nn.kg',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '128.204.223.117:22',
-      tooltip: '我的生产服务器SSH',
+      target: 'https://url.nn.kg:443',
+      tooltip: 'Url.nn.kg',
       statusPageLink: 'https://panel11.serv00.com/contact',
       timeout: 5000,
     },
