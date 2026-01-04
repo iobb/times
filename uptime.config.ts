@@ -26,12 +26,12 @@ const workerConfig = {
       timeout: 5000,
     },
      {
-      id: 'bear',
-      name: 'Bearlog ʕ•ᴥ•ʔ',
+      id: 'gvuy',
+      name: 'Dll.Gv.uY ʕ•ᴥ•ʔ',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://pay.bearblog.dev',
+      target: 'https://dll.gv.uy',
       tooltip: 'Bearblog',
       //checkLocationWorkerRoute: 'https://ip.bcn.us.kg/',
       timeout: 5000,
@@ -77,13 +77,13 @@ const workerConfig = {
     },
     {
       id: 'vercel4',
-      name: 'Url.nn.kg',
+      name: 'Gv.uY',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://url.nn.kg:443',
+      target: '15.204.129.36:26666',
       tooltip: 'Url.nn.kg',
-      statusPageLink: 'https://panel11.serv00.com/contact',
+      statusPageLink: 'https://gv.uy',
       timeout: 5000,
     },
     {
