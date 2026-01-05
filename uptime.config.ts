@@ -1,6 +1,6 @@
 const pageConfig = {
   // Title for your status page
-  title: "在线状态页面-Page",
+  title: "_ 在线状态页面-Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://cn.bing.com', label: '必应' , highlight: true},
@@ -27,7 +27,7 @@ const workerConfig = {
     },
      {
       id: 'gvuy',
-      name: 'Dll.Gv.uY ʕ•ᴥ•ʔ',
+      name: 'Dll.Gv.uY',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -81,9 +81,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '15.204.129.36:80',
-      tooltip: '15.204.129.36:80',
-      statusPageLink: 'https://gv.uy',
+      target: '15.204.129.36:22',
+      tooltip: '15.204.129.36:22',
+      statusPageLink: '#',
       timeout: 5000,
     },
     {
