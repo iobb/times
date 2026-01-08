@@ -81,9 +81,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '8.8.8.8',
-      tooltip: '8.8.8.8',
-      statusPageLink: '#',
+      target: '8.8.8.8:80',
+      tooltip: '8.8.8.8:80',
+      statusPageLink: 'https://coo.ae.kg',
       timeout: 5000,
     },
     {
