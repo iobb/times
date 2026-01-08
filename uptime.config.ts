@@ -79,7 +79,7 @@ const workerConfig = {
       id: 'vercel4',
       name: 'HaxUs3',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://coo.ae.kg',
       timeout: 5000,
