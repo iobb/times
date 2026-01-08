@@ -77,12 +77,12 @@ const workerConfig = {
     },
     {
       id: 'vercel4',
-      name: 'Gv.uY',
+      name: 'HaxUs3',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '15.204.129.36:22',
-      tooltip: '15.204.129.36:22',
+      target: 'Java.ae.kg:443',
+      tooltip: 'Java.nn.kg:443',
       statusPageLink: '#',
       timeout: 5000,
     },
