@@ -81,7 +81,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'Java.ae.kg:443',
+      target: '8.9.8.9:22',
       tooltip: 'Java.nn.kg:443',
       statusPageLink: '#',
       timeout: 5000,
